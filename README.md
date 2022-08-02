@@ -20,7 +20,7 @@ small md5 rainbow
 
 a simple python web script for MD5 search
 
-	starnight:MD5 starnight$ python3 main.py
+	$ python3 main.py
 	Calculating MD5...
 	945783
 	 * Serving Flask app "main" (lazy loading)
@@ -47,7 +47,7 @@ Do not worry about you may get the same password line, the script has already ha
 
 a script to create a small MD5 rainbow and store MD5 hashes in md5.db
 
-	starnight:MD5 starnight$ python3 md5.py
+	$ python3 md5.py
 
 md5.php : a simple php page for MD5 search, it will try to find where your input MD5 hash in md5.db . 
 
@@ -55,7 +55,7 @@ You need a web server, like apache to show it up. It's a bit annoying, that's wh
 
 md5.db : to create this md5.db
 
-	sqlite3 md5.db
+	$ sqlite3 md5.db
 
 	CREATE TABLE MD5(
 	   ID INT PRIMARY KEY     NOT NULL,
@@ -65,7 +65,7 @@ md5.db : to create this md5.db
 
 Because 50M limits with Github, given md5.db just contains the lines with the first dictionary. 
 
-	starnight:MD5 starnight$ sqlite3 md5.db
+	$ sqlite3 md5.db
 	SQLite version 3.19.3 2017-06-08 14:26:16
 	Enter ".help" for usage hints.
 	sqlite> select count(*) from MD5;
